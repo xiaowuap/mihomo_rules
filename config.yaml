@@ -181,12 +181,6 @@ proxy-groups:
       - 全球直连
       - Proxies
 
-  - name: 广告拦截
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
-    type: select
-    proxies:
-      - REJECT
-      - 全球直连
 
   - name: 漏网之鱼
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
@@ -342,11 +336,7 @@ rule-providers:
     path: ./ruleset/AdditionalFilter.list
 
 rules:
-  - "RULE-SET,reject_non_ip,广告拦截"
-  - "RULE-SET,reject_domainset,广告拦截"
   - "RULE-SET,reject_non_ip_drop,REJECT-DROP"
-  - "RULE-SET,reject_non_ip_no_drop,广告拦截"
-  - "RULE-SET,AdditionalFilter,广告拦截"
   - "RULE-SET,sogouinput,搜狗输入"
   - "RULE-SET,TruthSocial,懂王社媒"
   - "RULE-SET,cdn_domainset,静态资源"
@@ -385,6 +375,45 @@ rules:
   - "GEOIP,LAN,全球直连,no-resolve"
   - "GEOIP,PRIVATE,全球直连,no-resolve"
   - "MATCH,漏网之鱼"
+  - "DOMAIN-SUFFIX,xrh0905.top,DIRECT"
+  - "DOMAIN-SUFFIX,xhome.top,DIRECT"
+  - "DOMAIN-SUFFIX,xrhhk.top,DIRECT"
+  - "DOMAIN-SUFFIX,xiaowuap.com,DIRECT"
+  - "IP-CIDR,192.168.0.0/16,DIRECT"
+  - "DOMAIN-KEYWORD,stun,DIRECT"
+  - "DOMAIN-KEYWORD,turn,DIRECT"
+  - "DOMAIN-KEYWORD,adobe.io,REJECT"
+  - "DOMAIN-KEYWORD,adobestats.io,REJECT"
+  - "DOMAIN,time.windows.com,DIRECT"
+  - "DOMAIN-KEYWORD,ntp,DIRECT"
+  - "DST-PORT,19788,Proxies"
+  - "DST-PORT,123,DIRECT"
+  - "DST-PORT,8099,Proxies"
+  - "DST-PORT,15666,Proxies"
+  - "DST-PORT,30004,Proxies"
+  - "DST-PORT,30005,Proxies"
+  - "DOMAIN-SUFFIX,epdg.epc.mnc011.mcc460.pub.3gppnetwork.org,DIRECT"
+  - "DOMAIN-SUFFIX,fr24.com,Proxies"
+  - "DOMAIN-SUFFIX,flightradar24.com,Proxies"
+  - "DOMAIN-SUFFIX,sp288.top,DIRECT"
+  - "DST-PORT,9993,DIRECT"
+  - "DST-PORT,1199,DIRECT"
+  - "DOMAIN-SUFFIX,duolingo.cn,Proxies"
+  - "DOMAIN-SUFFIX,duolingo.com,Proxies"
+  - "DOMAIN-SUFFIX,aliyuncs.com,DIRECT"
+  - "IP-CIDR,59.59.0.0/16,DIRECT"
+  - "DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,DIRECT"
+  - "DOMAIN-SUFFIX,epdg.epc.mnc015.mcc234.pub.3gppnetwork.org,DIRECT"
+  - "DOMAIN-SUFFIX,ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org,DIRECT"
+  - "DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org,DIRECT"
+  - "DOMAIN-SUFFIX,entsrv-uk.vodafone.com,DIRECT"
+  - "DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com,DIRECT"
+  - "IP-CIDR,88.82.0.0/19,DIRECT"
+  - "IP-CIDR,46.68.0.0/17,DIRECT"
+  - "IP-CIDR,87.194.0.0/16,DIRECT"
+  - "SRC-IP-CIDR,10.44.77.0/24,DIRECT"
+  - "DOMAIN-KEYWORD,ocsp,DIRECT"
+
 
 sniffer:
   sniff:
