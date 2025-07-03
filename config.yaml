@@ -74,50 +74,6 @@ proxy-groups:
       - 手动切换
       - 全球直连
 
-  - name: TikTok
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
-    type: select
-    proxies:
-      - Proxies
-      - 手动切换
-      - 全球直连
-
-  - name: E-Hentai
-    icon: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Ehentai.png
-    type: select
-    proxies:
-      - Proxies
-      - 手动切换
-      - 全球直连
-
-  - name: PikPak
-    icon: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/PikPak.png
-    type: select
-    proxies:
-      - Proxies
-      - 手动切换
-      - 全球直连
-
-  - name: 巴哈姆特
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
-    type: select
-    proxies:
-      - Proxies
-      - 手动切换
-      - 全球直连
-
-  - name: 哔哩哔哩
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
-    type: select
-    proxies:
-      - 全球直连
-
-  - name: 懂王社媒
-    icon: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/TruthSocial.png
-    type: select
-    proxies:
-      - Proxies
-      - 手动切换
 
   - name: 学术资源
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Scholar.png
@@ -142,13 +98,6 @@ proxy-groups:
       - Proxies
       - 手动切换
       - 全球直连
-
-  - name: 搜狗输入
-    icon: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/Sougou.png
-    type: select
-    proxies:
-      - 全球直连
-      - REJECT
 
   - name: 静态资源
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
@@ -199,13 +148,6 @@ rule-providers:
     url: https://ruleset.skk.moe/Clash/non_ip/microsoft.txt
     path: ./sukkaw_ruleset/microsoft_non_ip.txt
 
-  TruthSocial:
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/TruthSocial.list
-    path: ./ruleset/TruthSocial.list
 
   reject_non_ip_no_drop:
     type: http
@@ -239,13 +181,6 @@ rule-providers:
     url: https://ruleset.skk.moe/Clash/domainset/reject.txt
     path: ./sukkaw_ruleset/reject_domainset.txt
 
-  sogouinput:
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://ruleset.skk.moe/Clash/non_ip/sogouinput.txt
-    path: ./sukkaw_ruleset/sogouinput.txt
 
   cdn_domainset:
     type: http
@@ -287,22 +222,6 @@ rule-providers:
     url: https://ruleset.skk.moe/Clash/non_ip/ai.txt
     path: ./sukkaw_ruleset/ai_non_ip.txt
 
-  TikTok:
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/TikTok.list
-    path: ./ruleset/TikTok.list
-
-  EHentai:
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/EHentai.list
-    path: ./ruleset/EHentai.list
-
   PlayStoreFix:
     type: http
     behavior: classical
@@ -338,15 +257,12 @@ rule-providers:
 rules:
   - "RULE-SET,reject_non_ip_drop,REJECT-DROP"
   - "RULE-SET,sogouinput,搜狗输入"
-  - "RULE-SET,TruthSocial,懂王社媒"
   - "RULE-SET,cdn_domainset,静态资源"
   - "RULE-SET,cdn_non_ip,静态资源"
   - "RULE-SET,apple_cdn,全球直连"
   - "RULE-SET,microsoft_cdn_non_ip,全球直连"
   - "RULE-SET,ai_non_ip,人工智能"
   - "RULE-SET,Microsoft,微软服务"
-  - "RULE-SET,EHentai,E-Hentai"
-  - "RULE-SET,TikTok,TikTok"
   - "RULE-SET,SteamFix,Steam修复"
   - "RULE-SET,PlayStoreFix,Play商店修复"
   - "RULE-SET,GoogleFCM,FCM推送"
@@ -356,15 +272,12 @@ rules:
   - "GEOSITE,YOUTUBE@CN,全球直连"
   - "GEOSITE,YOUTUBE,YouTube"
   - "GEOSITE,NETFLIX,Netflix"
-  - "GEOSITE,BAHAMUT,巴哈姆特"
-  - "GEOSITE,BILIBILI,哔哩哔哩"
   - "GEOSITE,CATEGORY-GAMES@CN,全球直连"
   - "GEOSITE,CATEGORY-GAMES,游戏平台"
   - "GEOSITE,CATEGORY-SCHOLAR-!CN,学术资源"
   - "GEOSITE,CATEGORY-SCHOLAR-CN,全球直连"
   - "GEOSITE,CATEGORY-CRYPTOCURRENCY,加密货币"
   - "GEOSITE,TELEGRAM,Telegram"
-  - "GEOSITE,PIKPAK,PikPak"
   - "GEOSITE,GEOLOCATION-!CN,Proxies"
   - "GEOSITE,CN,全球直连"
   - "GEOSITE,PRIVATE,全球直连"
