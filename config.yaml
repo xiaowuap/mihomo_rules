@@ -230,7 +230,6 @@ rule-providers:
 
 rules:
   - "RULE-SET,game-download,DIRECT"
-  - "RULE-SET,sogouinput,搜狗输入"
   - "RULE-SET,cdn_domainset,静态资源"
   - "RULE-SET,cdn_non_ip,静态资源"
   - "RULE-SET,apple_cdn,全球直连"
