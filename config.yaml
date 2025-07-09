@@ -148,39 +148,13 @@ rule-providers:
     url: https://ruleset.skk.moe/Clash/non_ip/microsoft.txt
     path: ./sukkaw_ruleset/microsoft_non_ip.txt
 
-
-  reject_non_ip_no_drop:
+  game-download:
     type: http
     behavior: classical
     format: text
     interval: 86400
-    url: https://ruleset.skk.moe/Clash/non_ip/reject-no-drop.txt
-    path: ./sukkaw_ruleset/reject_non_ip_no_drop.txt
-
-  reject_non_ip_drop:
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://ruleset.skk.moe/Clash/non_ip/reject-drop.txt
-    path: ./sukkaw_ruleset/reject_non_ip_drop.txt
-
-  reject_non_ip:
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://ruleset.skk.moe/Clash/non_ip/reject.txt
-    path: ./sukkaw_ruleset/reject_non_ip.txt
-
-  reject_domainset:
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    url: https://ruleset.skk.moe/Clash/domainset/reject.txt
-    path: ./sukkaw_ruleset/reject_domainset.txt
-
+    url: https://ruleset.skk.moe/Clash/domainset/game-download.txt
+    path: ./sukkaw_ruleset/game-download.txt
 
   cdn_domainset:
     type: http
@@ -255,7 +229,7 @@ rule-providers:
     path: ./ruleset/AdditionalFilter.list
 
 rules:
-  - "RULE-SET,reject_non_ip_drop,REJECT-DROP"
+  - "RULE-SET,game-download,DIRECT"
   - "RULE-SET,sogouinput,搜狗输入"
   - "RULE-SET,cdn_domainset,静态资源"
   - "RULE-SET,cdn_non_ip,静态资源"
