@@ -123,14 +123,6 @@ proxy-groups:
       - 全球直连
       - Proxies
 
-  - name: Play商店修复
-    icon: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/icons/GooglePlay.png
-    type: select
-    proxies:
-      - 全球直连
-      - Proxies
-
-
   - name: 漏网之鱼
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
@@ -196,14 +188,6 @@ rule-providers:
     url: https://ruleset.skk.moe/Clash/non_ip/ai.txt
     path: ./sukkaw_ruleset/ai_non_ip.txt
 
-  PlayStoreFix:
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/GooglePlayStoreFix.list
-    path: ./ruleset/GooglePlayStoreFix.list
-
   SteamFix:
     type: http
     behavior: classical
@@ -237,7 +221,6 @@ rules:
   - "RULE-SET,ai_non_ip,人工智能"
   - "RULE-SET,Microsoft,微软服务"
   - "RULE-SET,SteamFix,Steam修复"
-  - "RULE-SET,PlayStoreFix,Play商店修复"
   - "RULE-SET,GoogleFCM,FCM推送"
   - "GEOSITE,GOOGLEFCM,FCM推送"
   - "GEOSITE,GOOGLE-PLAY@CN,全球直连"
