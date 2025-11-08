@@ -21,7 +21,7 @@ proxy-groups:
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: url-test
     include-all: true
-    exclude-filter: "(?i)家宽|家庭|商宽|落地|游戏"
+    exclude-filter: "(?i)家宽|家庭|商宽|落地|游戏|IEPL"
     interval: 300
     tolerance: 20
     lazy: false
@@ -248,6 +248,7 @@ rules:
   - "DOMAIN-KEYWORD,xhome.top,DIRECT"
   - "DOMAIN-KEYWORD,xrhhk.top,DIRECT"
   - "DOMAIN-KEYWORD,xiaowuap.com,DIRECT"
+  - "DOMAIN-KEYWORD,todayeat.fun,DIRECT"
   - "IP-CIDR,192.168.0.0/16,DIRECT"
   - "DOMAIN-KEYWORD,stun,DIRECT"
   - "DOMAIN-KEYWORD,turn,DIRECT"
