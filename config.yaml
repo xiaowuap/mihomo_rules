@@ -10,6 +10,7 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择
+      - 省流节点
       - 手动切换
 
   - name: 手动切换
@@ -22,6 +23,15 @@ proxy-groups:
     type: url-test
     include-all: true
     exclude-filter: "(?i)家宽|家庭|商宽|落地|游戏|海外"
+    interval: 300
+    tolerance: 20
+    lazy: false
+
+  - name: 省流节点
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+    type: url-test
+    include-all: true
+    exclude-filter: "(?i)IEPL"
     interval: 300
     tolerance: 20
     lazy: false
@@ -107,6 +117,7 @@ proxy-groups:
       - Proxies
       - 自动选择
       - 手动切换
+      - 省流节点
       - 全球直连
 
   - name: FCM推送
@@ -129,6 +140,8 @@ proxy-groups:
     proxies:
       - Proxies
       - 全球直连
+      - 手动切换
+      - 省流节点
 
 
 rule-providers:
