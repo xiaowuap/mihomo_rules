@@ -42,8 +42,8 @@ proxy-groups:
   - name: 新加坡
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
     type: url-test
-    include-all: true
-    include-filter: '(?i)新加坡|Singapore|\bSG\b'
+    include-all: false
+    include-filter: "(?i)新加坡|Singapore|\bSG\b"
     interval: 300
     tolerance: 20
     lazy: false
@@ -51,8 +51,8 @@ proxy-groups:
   - name: 香港
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
     type: url-test
-    include-all: true
-    include-filter: '(?i)香港|Hong\s*Kong|\bHK\b'
+    include-all: false
+    include-filter: "(?i)香港|Hong\s*Kong|\bHK\b"
     interval: 300
     tolerance: 20
     lazy: false
@@ -60,8 +60,8 @@ proxy-groups:
   - name: 美国
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
     type: url-test
-    include-all: true
-    include-filter: '(?i)美国|United\s*States|\bUS\b|\bUSA\b'
+    include-all: false
+    include-filter: "(?i)美国|United\s*States|\bUS\b|\bUSA\b"
     interval: 300
     tolerance: 20
     lazy: false
