@@ -11,6 +11,9 @@ proxy-groups:
     proxies:
       - 自动选择
       - 省流节点
+      - 新加坡
+      - 香港
+      - 美国
       - 手动切换
 
   - name: 手动切换
@@ -36,11 +39,41 @@ proxy-groups:
     tolerance: 20
     lazy: false
 
+  - name: 新加坡
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+    type: url-test
+    include-all: true
+    include-filter: "(?i)新加坡|Singapore|\bSG\b"
+    interval: 300
+    tolerance: 20
+    lazy: false
+
+  - name: 香港
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+    type: url-test
+    include-all: true
+    include-filter: "(?i)香港|Hong\s*Kong|\bHK\b"
+    interval: 300
+    tolerance: 20
+    lazy: false
+
+  - name: 美国
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+    type: url-test
+    include-all: true
+    include-filter: "(?i)美国|United\s*States|\bUS\b|\bUSA\b"
+    interval: 300
+    tolerance: 20
+    lazy: false
+
   - name: 人工智能
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
     proxies:
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
       - 手动切换
       - 全球直连
 
@@ -49,6 +82,9 @@ proxy-groups:
     type: select
     proxies:
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
       - 手动切换
       - 全球直连
 
@@ -57,6 +93,9 @@ proxy-groups:
     type: select
     proxies:
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
       - 手动切换
       - 全球直连
 
@@ -65,6 +104,9 @@ proxy-groups:
     type: select
     proxies:
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
       - 手动切换
       - 全球直连
 
@@ -73,6 +115,9 @@ proxy-groups:
     type: select
     proxies:
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
       - 手动切换
       - 全球直连
 
@@ -81,6 +126,9 @@ proxy-groups:
     type: select
     proxies:
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
       - 手动切换
       - 全球直连
 
@@ -90,6 +138,9 @@ proxy-groups:
     type: select
     proxies:
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
       - 手动切换
       - 全球直连
 
@@ -98,6 +149,9 @@ proxy-groups:
     type: select
     proxies:
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
       - 手动切换
       - 全球直连
 
@@ -106,6 +160,20 @@ proxy-groups:
     type: select
     proxies:
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
+      - 手动切换
+      - 全球直连
+
+  - name: AppleAI
+    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
+    type: select
+    proxies:
+      - Proxies
+      - 新加坡
+      - 香港
+      - 美国
       - 手动切换
       - 全球直连
 
@@ -118,6 +186,9 @@ proxy-groups:
       - 自动选择
       - 手动切换
       - 省流节点
+      - 新加坡
+      - 香港
+      - 美国
       - 全球直连
 
   - name: FCM推送
@@ -126,6 +197,9 @@ proxy-groups:
     proxies:
       - 全球直连
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
 
   - name: Steam修复
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
@@ -133,6 +207,9 @@ proxy-groups:
     proxies:
       - 全球直连
       - Proxies
+      - 新加坡
+      - 香港
+      - 美国
 
   - name: 漏网之鱼
     icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
@@ -142,6 +219,9 @@ proxy-groups:
       - 全球直连
       - 手动切换
       - 省流节点
+      - 新加坡
+      - 香港
+      - 美国
 
 
 rule-providers:
@@ -276,11 +356,11 @@ rules:
   - "DOMAIN-KEYWORD,duolingo,Proxies"
   - "DOMAIN-KEYWORD,aliyuncs.com,DIRECT"
   - "IP-CIDR,59.59.0.0/16,DIRECT"
-  - "DOMAIN-KEYWORD,gspe1-ssl.ls.apple.com,Proxies"
-  - "DOMAIN,apple-relay.apple.com,Proxies"
-  - "DOMAIN,apple-relay.cloudflare.com,Proxies"
-  - "DOMAIN,apple-relay.fastly-edge.com,Proxies"
-  - "DOMAIN,apple-relay.mask.apple-dns.net,Proxies"
+  - "DOMAIN-KEYWORD,gspe1-ssl.ls.apple.com,AppleAI"
+  - "DOMAIN,apple-relay.apple.com,AppleAI"
+  - "DOMAIN,apple-relay.cloudflare.com,AppleAI"
+  - "DOMAIN,apple-relay.fastly-edge.com,AppleAI"
+  - "DOMAIN,apple-relay.mask.apple-dns.net,AppleAI"
   - "DOMAIN-KEYWORD,epdg.epc.mnc015.mcc234.pub.3gppnetwork.org,Proxies"
   - "DOMAIN-KEYWORD,ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org,Proxies"
   - "DOMAIN-KEYWORD,ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org,Proxies"
@@ -300,7 +380,7 @@ sniffer:
   sniff:
     HTTP:
       ports: [80, 8080, 8880]
-      override-destination: false  
+      override-destination: false
     TLS:
       ports: [443, 8443]
       override-destination: true
