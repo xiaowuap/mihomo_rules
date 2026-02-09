@@ -336,7 +336,6 @@ rules:
   - "GEOIP,CN,全球直连,no-resolve"
   - "GEOIP,LAN,全球直连,no-resolve"
   - "GEOIP,PRIVATE,全球直连,no-resolve"
-  - "MATCH,漏网之鱼"
   - "DOMAIN-KEYWORD,xrh0905.top,DIRECT"
   - "DOMAIN-KEYWORD,xhome.top,DIRECT"
   - "DOMAIN-KEYWORD,xrhhk.top,DIRECT"
@@ -374,6 +373,7 @@ rules:
   - "SRC-IP-CIDR,10.44.77.0/24,DIRECT"
   - "DOMAIN-KEYWORD,ocsp,DIRECT"
   - "DST-PORT,9993,DIRECT"
+  - "MATCH,漏网之鱼"
 
 
 sniffer:
