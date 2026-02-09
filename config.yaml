@@ -306,6 +306,9 @@ rule-providers:
     path: ./ruleset/AdditionalFilter.list
 
 rules:
+  - "DOMAIN,iprofiles.apple.com,REJECT"
+  - "DOMAIN,mdmenrollment.apple.com,REJECT"
+  - "DOMAIN,deviceenrollment.apple.com,REJECT"
   - "RULE-SET,game-download,DIRECT"
   - "RULE-SET,cdn_domainset,静态资源"
   - "RULE-SET,cdn_non_ip,静态资源"
