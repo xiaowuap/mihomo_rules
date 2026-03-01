@@ -1,12 +1,12 @@
 proxy-groups:
   - name: 全球直连
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
     proxies:
       - DIRECT
 
   - name: Proxies
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
     proxies:
       - 自动选择
@@ -17,12 +17,12 @@ proxy-groups:
       - 手动切换
 
   - name: 手动切换
-    icon: https://cdn.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     include-all: true
     type: select
 
   - name: 自动选择
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: url-test
     include-all: true
     exclude-filter: "(?i)家宽|家庭|商宽|落地|IEPL|游戏|海外"
@@ -31,7 +31,7 @@ proxy-groups:
     lazy: false
 
   - name: 省流节点
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: url-test
     include-all: true
     exclude-filter: "(?i)IEPL"
@@ -40,7 +40,7 @@ proxy-groups:
     lazy: false
 
   - name: 新加坡
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
     type: url-test
     include-all: true
     include-filter: "(?i)新加坡|Singapore|SG"
@@ -49,7 +49,7 @@ proxy-groups:
     lazy: false
 
   - name: 香港
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
     type: url-test
     include-all: true
     include-filter: "(?i)香港|HongKong|HK"
@@ -58,7 +58,7 @@ proxy-groups:
     lazy: false
 
   - name: 美国
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
     type: url-test
     include-all: true
     include-filter: "(?i)美国|UnitedStates|US|USA"
@@ -67,7 +67,7 @@ proxy-groups:
     lazy: false
 
   - name: 人工智能
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
     proxies:
       - Proxies
@@ -78,7 +78,7 @@ proxy-groups:
       - 全球直连
 
   - name: 加密货币
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cryptocurrency_3.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cryptocurrency_3.png
     type: select
     proxies:
       - Proxies
@@ -89,7 +89,7 @@ proxy-groups:
       - 全球直连
 
   - name: Telegram
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
     type: select
     proxies:
       - Proxies
@@ -100,7 +100,7 @@ proxy-groups:
       - 全球直连
 
   - name: Google
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
     proxies:
       - Proxies
@@ -111,7 +111,7 @@ proxy-groups:
       - 全球直连
 
   - name: YouTube
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
     type: select
     proxies:
       - Proxies
@@ -122,7 +122,7 @@ proxy-groups:
       - 全球直连
 
   - name: Netflix
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
     type: select
     proxies:
       - Proxies
@@ -134,7 +134,7 @@ proxy-groups:
 
 
   - name: 学术资源
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Scholar.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Scholar.png
     type: select
     proxies:
       - Proxies
@@ -145,7 +145,7 @@ proxy-groups:
       - 全球直连
 
   - name: 游戏平台
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png
     type: select
     proxies:
       - Proxies
@@ -156,7 +156,7 @@ proxy-groups:
       - 全球直连
 
   - name: 微软服务
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
     proxies:
       - Proxies
@@ -167,7 +167,7 @@ proxy-groups:
       - 全球直连
 
   - name: AppleAI
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
     type: select
     proxies:
       - Proxies
@@ -178,7 +178,7 @@ proxy-groups:
       - 全球直连
 
   - name: 静态资源
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
     type: select
     include-all: true
     proxies:
@@ -192,7 +192,7 @@ proxy-groups:
       - 全球直连
 
   - name: FCM推送
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
     proxies:
       - 全球直连
@@ -202,7 +202,7 @@ proxy-groups:
       - 美国
 
   - name: Steam修复
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
     type: select
     proxies:
       - 全球直连
@@ -212,7 +212,7 @@ proxy-groups:
       - 美国
 
   - name: 漏网之鱼
-    icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
+    icon: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
     proxies:
       - Proxies
@@ -230,7 +230,7 @@ rule-providers:
     behavior: classical
     format: text
     interval: 86400
-    url: https://ruleset.skk.moe/Clash/non_ip/microsoft.txt
+    url: https://config-deliver.todayeat.fun/ruleset.skk.moe/Clash/non_ip/microsoft.txt
     path: ./sukkaw_ruleset/microsoft_non_ip.txt
 
   game-download:
@@ -238,7 +238,7 @@ rule-providers:
     behavior: classical
     format: text
     interval: 86400
-    url: https://ruleset.skk.moe/Clash/domainset/game-download.txt
+    url: https://config-deliver.todayeat.fun/ruleset.skk.moe/Clash/domainset/game-download.txt
     path: ./sukkaw_ruleset/game-download.txt
 
   cdn_domainset:
@@ -246,7 +246,7 @@ rule-providers:
     behavior: domain
     format: text
     interval: 86400
-    url: https://ruleset.skk.moe/Clash/domainset/cdn.txt
+    url: https://config-deliver.todayeat.fun/ruleset.skk.moe/Clash/domainset/cdn.txt
     path: ./sukkaw_ruleset/cdn_domainset.txt
 
   cdn_non_ip:
@@ -254,7 +254,7 @@ rule-providers:
     behavior: classical
     format: text
     interval: 86400
-    url: https://ruleset.skk.moe/Clash/non_ip/cdn.txt
+    url: https://config-deliver.todayeat.fun/ruleset.skk.moe/Clash/non_ip/cdn.txt
     path: ./sukkaw_ruleset/cdn_non_ip.txt
 
   apple_cdn:
@@ -262,7 +262,7 @@ rule-providers:
     behavior: domain
     format: text
     interval: 86400
-    url: https://ruleset.skk.moe/Clash/domainset/apple_cdn.txt
+    url: https://config-deliver.todayeat.fun/ruleset.skk.moe/Clash/domainset/apple_cdn.txt
     path: ./sukkaw_ruleset/apple_cdn.txt
 
   microsoft_cdn_non_ip:
@@ -270,7 +270,7 @@ rule-providers:
     behavior: classical
     format: text
     interval: 86400
-    url: https://ruleset.skk.moe/Clash/non_ip/microsoft_cdn.txt
+    url: https://config-deliver.todayeat.fun/ruleset.skk.moe/Clash/non_ip/microsoft_cdn.txt
     path: ./sukkaw_ruleset/microsoft_cdn_non_ip.txt
 
   ai_non_ip:
@@ -278,7 +278,7 @@ rule-providers:
     behavior: classical
     format: text
     interval: 86400
-    url: https://ruleset.skk.moe/Clash/non_ip/ai.txt
+    url: https://config-deliver.todayeat.fun/ruleset.skk.moe/Clash/non_ip/ai.txt
     path: ./sukkaw_ruleset/ai_non_ip.txt
 
   SteamFix:
@@ -286,7 +286,7 @@ rule-providers:
     behavior: classical
     format: text
     interval: 86400
-    url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/SteamFix.list
+    url: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/SteamFix.list
     path: ./ruleset/SteamFix.list
 
   GoogleFCM:
@@ -294,7 +294,7 @@ rule-providers:
     behavior: classical
     format: text
     interval: 86400
-    url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/FirebaseCloudMessaging.list
+    url: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/FirebaseCloudMessaging.list
     path: "./ruleset/FirebaseCloudMessaging.list"
 
   AdditionalFilter:
@@ -302,7 +302,7 @@ rule-providers:
     behavior: classical
     format: text
     interval: 86400
-    url: https://cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/AdditionalFilter.list
+    url: https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/AdditionalFilter.list
     path: ./ruleset/AdditionalFilter.list
 
 rules:
@@ -440,7 +440,7 @@ dns:
 geodata-mode: true
 
 geox-url:
-  geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
-  geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
-  mmdb: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb"
-  asn: "https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
+  geoip: "https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
+  geosite: "https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+  mmdb: "https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country.mmdb"
+  asn: "https://config-deliver.todayeat.fun/cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-ASN.mmdb"
